@@ -1,0 +1,217 @@
+{
+	"type": "modal",
+    "callback_id": "view_new_student",
+	"title": {
+		"type": "plain_text",
+		"text": "My App",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "Please enter the new student's info",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+            "block_id": "first_name",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "First name",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+            "block_id": "last_name",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Last name",
+				"emoji": true
+			}
+		},
+        {
+			"type": "input",
+            "block_id": "email",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Email address",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+            "block_id": "project_title",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Project title",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+            "block_id": "channel_name",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Project title",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+            "block_id": "subject1",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Subject 1",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+            "block_id": "subject2",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Subject 2",
+				"emoji": true
+			},
+			"optional": true
+		},
+		{
+			"type": "input",
+            "block_id": "thesis_type",
+			"element": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "MSc/BSc/Semester",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "MSc",
+							"emoji": true
+						},
+						"value": "MSc"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "BSc",
+							"emoji": true
+						},
+						"value": "BSc"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Semester",
+							"emoji": true
+						},
+						"value": "Semester"
+					}
+				],
+				"action_id": "action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "MSc/BSc/Semester",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+            "block_id": "start_date",
+			"element": {
+				"type": "datepicker",
+				"initial_date": "2021-09-01",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select a date",
+					"emoji": true
+				},
+				"action_id": "action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Strating date",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+            "block_id": "end_date",
+			"element": {
+				"type": "datepicker",
+				"initial_date": "2021-09-01",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select a date",
+					"emoji": true
+				},
+				"action_id": "action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "End date",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+            "block_id": "secondary_supervisor",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Secondary supervisor",
+				"emoji": true
+			},
+			"optional": true
+		}
+	]
+}
